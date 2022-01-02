@@ -1,0 +1,391 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lato-Regular';
+}
+
+.siteHeader{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+.siteNav{
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 45px 45px 4fr 45px;
+    grid-template-rows: 45px;
+    gap: 5px;
+    padding: 15px;
+}
+
+.search{
+    width: 45px;
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    background-image: url(../img/Lupa.svg);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center center;
+}
+
+.maleta{
+    width: 45px;
+    cursor: pointer;
+    background-image: url(../img/bolsa.svg);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center center;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+}
+
+
+.logo{
+    background-color: #293d57;
+    width: 45px;
+    justify-self: center;
+    cursor: pointer;
+    background-image: url(../img/Logo\ juf.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.logo a {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.burger{
+    width: 45px;
+    cursor: pointer;
+    background-image: url(../img/Manú.svg);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center center;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    right: -75%;
+    width: 75%;
+    height: 100%;
+    z-index: 2;
+    background-color: #f5f5f5;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu.open{
+    right: 0;
+}
+
+.bg-ct{
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.socialNetworks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.net{
+    width: 35px;
+    height: 35px;
+}
+
+.siteMenu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.itemNav{
+    width: 100%;
+    border-radius: 50px;
+    background-color: #fff;
+    margin: 10px 0;
+}
+
+.anchorItem{
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+}
+
+.imgItemNav{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.itemNav1 .imgItemNav{
+    background-image: url(../img/Pantalon\ 7.jpg);
+}
+
+.itemNav2 .imgItemNav{
+    background-image: url(../img/reloj\ 4.jpg);
+}
+
+.itemNav3 .imgItemNav{
+    background-image: url(../img/tenis\ 2.jpg);
+}
+
+.itemNav4 .imgItemNav{
+    background-image: url(../img/Buso.jpg);
+}
+
+.itemNav5 .imgItemNav{
+    background-image: url(../img/Gafas.jpg);
+}
+
+.itemNav6 .imgItemNav{
+    background-image: url(../img/chaqueta.jpg);
+}
+
+.itemNav7 .imgItemNav{
+    background-image: url(../img/guantes.jpg);
+}
+
+.nameItemNav{
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 55px);
+}
+
+
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-image: url(../img/window-close-solid.svg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+main{
+    padding-bottom: 100px;
+}
+
+.hero{
+    width: 100%;
+    height: 50vh;
+    background-image: url(../img/pexels-spencer-selover-428338.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    margin-bottom: 50px;
+}
+
+.gallery{
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.pantsTitle{
+    width: 100%;
+    font-weight: normal;
+    position: relative;
+    font-size: 22px;
+}
+
+.pantsTitle:before,
+.pantsTitle:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000;
+    width: 30%;
+    height: 2px;
+    left: 0;
+}
+
+.pantsTitle:after{
+    left: initial;
+    right: 0;
+}
+
+.galleryContainer{
+    margin-top: 35px;
+    width: 600%;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.card{
+    width: 6.5%;
+    margin: 0.5%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.329);
+}
+
+.pant-1 .imgProduct{
+    background-image: url(../img/pantalon.jpg);
+}
+
+.pant-2 .imgProduct{
+    background-image: url(../img/pantalon\ 2.jpg);
+}
+
+.pant-3 .imgProduct{
+    background-image: url(../img/Pantalon\ 4.jpg);
+}
+
+.pant-4 .imgProduct{
+    background-image: url(../img/Pantalon\ 5.jpg);
+}
+
+.pant-5 .imgProduct{
+    background-image: url(../img/Pantalon\ 7.jpg);
+}
+
+.pant-6 .imgProduct{
+    background-image: url(../img/Pantalon\ 9.jpg);
+}
+
+.clock-1 .imgProduct{
+    background-image: url(../img/REloj.jpg);
+}
+
+.clock-2 .imgProduct{
+    background-image: url(../img/REloj\ \ 2.jpg);
+}
+
+.clock-3 .imgProduct{
+    background-image: url(../img/REloj\ 3.jpg);
+}
+
+.clock-4 .imgProduct{
+    background-image: url(../img/reloj\ 4.jpg);
+}
+
+.clock-5 .imgProduct{
+    background-image: url(../img/Reloj\ 5.jpg);
+}
+
+.clock-6 .imgProduct{
+    background-image: url(../img/Reloj\ 6.jpg);
+}
+
+.shirt-1 .imgProduct{
+    background-image: url(../img/Buso.jpg);
+}
+
+.shirt-2 .imgProduct{
+    background-image: url(../img/chaqueta.jpg);
+}
+
+.shirt-3 .imgProduct{
+    background-image: url(../img/Chaqueta\ hombre.jpg);
+}
+
+.shirt-4 .imgProduct{
+    background-image: url(../img/Buso.jpg);
+}
+
+.shirt-5 .imgProduct{
+    background-image: url(../img/chaqueta.jpg);
+}
+
+.shirt-6 .imgProduct{
+    background-image: url(../img/Chaqueta\ hombre.jpg);
+}
+
+.imgProduct{
+    height: 25vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.infoProduct{
+    margin-top: 20px;
+}
+
+.productName{
+    width: 100%;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.priceProduct{
+    font-size: 15px;
+    margin: 20px 0;
+}
+
+.btnProduct{
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.containerProducts{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+
+.containerProducts .card{
+    width: 40%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.mainPants{
+    padding-bottom: 50px;
+}
